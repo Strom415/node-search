@@ -1,0 +1,12 @@
+<span>layers: </span>
+<span id='layers'></span>
+
+<script>
+  onmessage = event => {
+    const { action, data } = event.data.pluginMessage;
+
+    if (action === 'layers') {
+      document.getElementById('layers').innerHTML = data;
+    }
+  }
+</script>
